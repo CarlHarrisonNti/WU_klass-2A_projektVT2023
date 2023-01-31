@@ -76,3 +76,26 @@ button {
     font-size: 25px;
     margin: 5px 0px;
 }
+
+nav {
+    padding: 10px 100px;
+    background-image: linear-gradient(to bottom right, rgb(33,142,227), rgb(37, 187, 213));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20vh;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
