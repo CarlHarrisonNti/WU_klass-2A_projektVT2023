@@ -18,6 +18,19 @@ button {
     color: white;
 }
 
+button:hover {
+    background-image: none;
+    background-color: rgb(33,142,227);
+}
+
+footer {
+    background-image: linear-gradient(to bottom right, rgb(33,142,227), rgb(37, 187, 213));
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .grid_wrapper {
     margin: 10px 100px;
     display: grid;
@@ -50,7 +63,7 @@ button {
     grid-area: pe;
 }
 
-#grid_wrapper, img {
+.grid_wrapper > div > img {
     padding: 5px;
     margin: 5px 0px;
     width: 48px;
@@ -60,18 +73,18 @@ button {
     color: white;
 }
 
-#grid_wrapper, p {
+.grid_wrapper, p {
     color: gray;
     font-size: 17px;
 }
 
-#grid_wrapper, h2 {
+.grid_wrapper, h2 {
     color: black;
     font-size: 35px;
     margin: 10px 0px;
 }
 
-#grid_wrapper, h3 {
+.grid_wrapper, h3 {
     color: black;
     font-size: 25px;
     margin: 5px 0px;
@@ -100,6 +113,80 @@ a {
     font-weight: 600;
 }
 
+.language_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+#python > div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    width: 100%;
+}
+
+.language_list > div{ 
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    margin: 10px 100px;
+    border: #000 solid 1px;
+}
+
+#python.open > p {
+    display: block;
+    color: #000;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.language_list > div >  p{
+    display: none;
+}
+
+.language_list  > div:hover {
+    
+    color: white;
+    box-shadow: #000 0px 0px 7px;
+    cursor: pointer;
+}
+
+.language_list > div > div > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0px 10px;
+    padding: 10px;
+    align-items: center;
+    width: 190px;
+}
+
+
+.language_list > div > div > img {
+    transform: rotate(90deg);
+    margin: 0px 10px;
+    transition: 0.1s;
+}
+
+.language_list > .open > div > img {
+    transform: rotate(0deg);
+}
+
+.language_list > div > div > .language {
+    width: 50px;
+    height: 50px;
+}
+
+
+
   @media screen and (max-width: 600px) {
     nav {
         justify-content: flex-end;
@@ -117,7 +204,7 @@ a {
         right: 0px;
         text-align: center;
         top: 60px;
-        height: 100vh;
+        height: 80vh;
         background-color: rgb(33,142,227);
         width: 100%;
         transition: all 0.3s ease;
@@ -157,5 +244,10 @@ a {
     
     .meny.open {
         display: flex;
+    }
+
+    .grid_wrapper {
+        display: flex;
+        flex-direction: column;
     }
 }
