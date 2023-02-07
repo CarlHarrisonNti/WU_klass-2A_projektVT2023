@@ -120,43 +120,96 @@ a {
     margin: 10px 0px;
 }
 
-#python > div{
+
+
+.language_list > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px min(200px, 10%);
+
+}
+
+#python > div {
+    background-image: linear-gradient(to bottom right, rgb(33,142,227), rgb(37, 187, 213));
+}
+
+#python > div:hover {
+    background-image: none;
+    background-color: rgb(33,142,227);
+}
+
+#ruby > div {
+    background-image: linear-gradient(to bottom right, rgb(239, 69, 69), rgb(232, 98, 71));
+}
+
+#ruby > div:hover {
+    background-image: none;
+    background-color: rgb(239, 69, 69);
+}
+
+#elixir > div {
+    background-image: linear-gradient(to bottom right, rgb(182, 61, 239), rgb(242, 72, 254));
+}
+
+#elixir > div:hover {
+    background-image: none;
+    background-color: rgb(182, 61, 239);
+}
+
+#ruby > p{
+    background-color: rgb(237, 160, 160);
+}
+
+#python > p{
+    background-color: lightblue;
+}
+
+#elixir > p{
+    background-color: rgb(245, 157, 245);
+}
+
+.language_list > div > div{
+    background-image: linear-gradient(to bottom right, rgb(33,142,227), rgb(37, 187, 213));
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-
+    border-radius: 10px;
     align-items: center;
     width: 100%;
 }
 
-.language_list > div{ 
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    align-items: center;
-    margin: 10px 100px;
-    border: #000 solid 1px;
+.language_list  > div > div:hover {
+    color: white;
+    background-image: none;
+    background-color: rgb(33,142,227);
+    cursor: pointer;
 }
 
-#python.open > p {
-    display: block;
-    color: #000;
-    border: #000 solid 1px;
+
+.language_list > div.open > p {
+    color: black;
+    /*background-image: linear-gradient(to bottom right, rgb(33,142,227), rgb(37, 187, 213));*/
     border-radius: 10px;
     width: 100%;
     padding: 10px;
+    display: block;
+    height: 100px;
+    opacity: 1;
+    transition: height 0.4s ease-out;
 }
 
 .language_list > div >  p{
-    display: none;
-}
-
-.language_list  > div:hover {
-    
-    color: white;
-    box-shadow: #000 0px 0px 7px;
-    cursor: pointer;
+    height: 0;
+    padding: 0px 10px;
+    color: black;
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    transition: height 0.4s ease-out;
 }
 
 .language_list > div > div > div {
@@ -173,7 +226,9 @@ a {
 .language_list > div > div > img {
     transform: rotate(90deg);
     margin: 0px 10px;
-    transition: 0.1s;
+    transition: 0.15s;
+    width: 30px;
+    height: 30px;
 }
 
 .language_list > .open > div > img {
@@ -208,7 +263,7 @@ a {
         background-color: rgb(33,142,227);
         width: 100%;
         transition: all 0.3s ease;
-
+        z-index: 1;
     }
 
     .hamburger {
@@ -249,5 +304,11 @@ a {
     .grid_wrapper {
         display: flex;
         flex-direction: column;
+    }
+    .language_list > div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px min(10px, 6%);
     }
 }
