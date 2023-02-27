@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -43,6 +45,33 @@ footer {
                         "ma ma xp pe";
 }
 
+header {
+    display: flex;
+    align-items: center;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-image: linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80);
+    background-color : #062343;
+    background-size:  cover;
+    background-position: center;
+  }
+
+header > h1 {
+    position: absolute;
+    color: white;
+    margin-left: 20px;
+    z-index: 1;
+    width: 30%;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 500;
+}
+
 #main-text {
     grid-area: ma;
 }
@@ -73,9 +102,27 @@ footer {
     color: white;
 }
 
+h1{
+    text-align: center;
+}
+
+h1 > span {
+    background: linear-gradient(to right, rgb(252, 72, 72), rgb(255, 157, 0));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .grid_wrapper, p {
     color: gray;
     font-size: 17px;
+}
+
+.transiton {
+    display: block;
+    height: 50px;
+    background: linear-gradient( #062343 10%, white 70%);
 }
 
 .grid_wrapper, h2 {
@@ -130,46 +177,46 @@ a {
 
 }
 
-#python > div {
+#python > #external {
     background-image: linear-gradient(to bottom right, rgb(33,142,227), rgb(37, 187, 213));
 }
 
-#python > div:hover {
+#python > #external:hover {
     background-image: none;
     background-color: rgb(33,142,227);
 }
 
-#ruby > div {
+#ruby > #external {
     background-image: linear-gradient(to bottom right, rgb(239, 69, 69), rgb(232, 98, 71));
 }
 
-#ruby > div:hover {
+#ruby > #external:hover {
     background-image: none;
     background-color: rgb(239, 69, 69);
 }
 
-#elixir > div {
+#elixir > #external {
     background-image: linear-gradient(to bottom right, rgb(182, 61, 239), rgb(242, 72, 254));
 }
 
-#elixir > div:hover {
+#elixir > #external:hover {
     background-image: none;
     background-color: rgb(182, 61, 239);
 }
 
-#ruby > p{
+#ruby > #internal{
     background-color: rgb(237, 160, 160);
 }
 
-#python > p{
+#python > #internal{
     background-color: lightblue;
 }
 
-#elixir > p{
+#elixir > #internal{
     background-color: rgb(245, 157, 245);
 }
 
-.language_list > div > div{
+.language_list > div > #external{
     background-image: linear-gradient(to bottom right, rgb(33,142,227), rgb(37, 187, 213));
     display: flex;
     justify-content: space-between;
@@ -180,7 +227,7 @@ a {
     width: 100%;
 }
 
-.language_list  > div > div:hover {
+.language_list  > div > #external:hover {
     color: white;
     background-image: none;
     background-color: rgb(33,142,227);
@@ -188,31 +235,33 @@ a {
 }
 
 
-.language_list > div.open > p {
+.language_list > div.open > #internal {
     color: black;
     /*background-image: linear-gradient(to bottom right, rgb(33,142,227), rgb(37, 187, 213));*/
     border-radius: 10px;
     width: 100%;
     padding: 10px;
-    display: block;
+    display: grid;
     height: 100px;
     opacity: 1;
     transition: height 0.4s ease-out;
 }
 
-.language_list > div >  p{
+.language_list > div >  #internal{
     height: 0;
     padding: 0px 10px;
     color: black;
     background-color: lightblue;
     border-radius: 10px;
     width: 100%;
-    display: block;
+    display: grid;
     overflow: hidden;
     transition: height 0.4s ease-out;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-areas: "text projects";
 }
 
-.language_list > div > div > div {
+.language_list > div > #external > div {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -311,4 +360,20 @@ a {
         gap: 10px;
         margin: 10px min(10px, 6%);
     }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px min(200px, 10%);
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px min(200px, 10%);
+    text-align: center;
 }
