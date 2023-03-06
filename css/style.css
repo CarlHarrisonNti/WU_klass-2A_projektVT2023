@@ -381,7 +381,6 @@ body {
 
 .grid_wrapper_2 {
   display: grid;
-  background-color: aqua;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   grid-template-rows: 60% 40%;
   grid-template-areas:
@@ -393,13 +392,9 @@ body {
 }
 
 .grid_wrapper_2 > .img {
-  /*background-color: rgb(109, 109, 109);*/
-  display: flex;
-  align-items: center;
   justify-content: center;
   grid-area: pic;
   margin: 10px;
-  border-radius: 10px;
 }
 
 .grid_wrapper_2 > .img > img {
@@ -409,37 +404,34 @@ body {
   box-shadow: rgb(0, 0, 0) 0px 0px 40px 9px;
 }
 
-.grid_wrapper_2 > .languages {
+.grid_wrapper_2 > div{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  grid-area: lan;
-  margin: 10px 10px 0px 0px;
-  background-color: rgb(109, 109, 109);
   border-radius: 10px;
 }
 
-.grid_wrapper_2 > .frameworks {
-  display: flex;
+.grid_wrapper_2 > .languages {
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  grid-area: lan;
+  background-color: rgb(109, 109, 109);
+  margin: 10px 10px 0px 0px;
+}
+
+.grid_wrapper_2 > .frameworks {
+  flex-direction: column;
   justify-content: space-around;
   grid-area: fam;
   background-color: rgb(109, 109, 109);
   margin: 0px 10px 20px 0px;
-  border-radius: 10px;
 }
 
 .grid_wrapper_2 > .text {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
   grid-area: txt;
   background-color: rgb(109, 109, 109);
   margin: 0px 0px 20px 10px;
-  border-radius: 10px;
 }
 
 @media screen and (max-width: 600px) {
