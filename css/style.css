@@ -324,6 +324,124 @@ a {
   height: 50px;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px min(200px, 10%);
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px min(200px, 10%);
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.child {
+  height: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.react {
+  background-color: rgb(33, 142, 227);
+}
+
+.representer {
+  background-color: rgb(211, 20, 20);
+}
+
+.something {
+  background-color: rgb(97, 28, 181);
+}
+
+.react > div, .something > div, .representer > div {
+  border-radius: 20px;
+  height: 80%;
+  width: 80%;
+  background-color: grey;
+  box-shadow: #131313 0px 0px 50px 15px;
+}
+
+.grid_wrapper_2 {
+  display: grid;
+  background-color: aqua;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: 60% 40%;
+  grid-template-areas:
+    'pic pic lan'
+    'txt txt fam';
+  gap: 10px;
+  margin: 10px min(200px, 5%);
+  text-align: center;
+}
+
+.grid_wrapper_2 > .img {
+  /*background-color: rgb(109, 109, 109);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: pic;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.grid_wrapper_2 > .img > img {
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 40px 9px;
+}
+
+.grid_wrapper_2 > .languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: lan;
+  margin: 10px 10px 0px 0px;
+  background-color: rgb(109, 109, 109);
+  border-radius: 10px;
+}
+
+.grid_wrapper_2 > .frameworks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: fam;
+  background-color: rgb(109, 109, 109);
+  margin: 0px 10px 20px 0px;
+  border-radius: 10px;
+}
+
+.grid_wrapper_2 > .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: txt;
+  background-color: rgb(109, 109, 109);
+  margin: 0px 0px 20px 10px;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 600px) {
   nav {
     justify-content: flex-end;
@@ -333,7 +451,6 @@ a {
     list-style-type: none;
     display: none;
     gap: 0px;
-    text-decoration: none;
     flex-direction: column;
     position: absolute;
     align-content: space-around;
@@ -345,7 +462,7 @@ a {
     background-color: rgb(33, 142, 227);
     width: 100%;
     transition: all 0.3s ease;
-    z-index: 1;
+    z-index: 2;
   }
 
   .hamburger {
@@ -392,117 +509,28 @@ a {
     gap: 10px;
     margin: 10px min(10px, 6%);
   }
+  .grid_wrapper_2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid_wrapper_2 > .languages {
+    height: 100%;
+    margin: 10px;
+  }
+
+  .grid_wrapper_2 > .frameworks {
+    height: 100%;
+    margin: 10px;
+  }
+
+  .grid_wrapper_2 > .text {
+    height: 100%;
+    margin: 10px;
+  }
+
+  .child {
+    height: 150%;
+  }
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 10px min(200px, 10%);
-  text-align: center;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 10px min(200px, 10%);
-  text-align: center;
-}
-
-.container {
-  height: 100%;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-.child {
-  height: 100%;
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-.react {
-  background-color: rgb(33, 142, 227);
-}
-
-.react > div {
-  border-radius: 20px;
-  height: 80%;
-  width: 80%;
-  background-color: grey;
-  box-shadow: #000000 0px 0px 50px 5px;
-}
-
-.grid_wrapper_2 {
-  display: grid;
-  background-color: aqua;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    'pic pic lan'
-    'txt txt fam';
-  gap: 10px;
-  margin: 10px min(200px, 10%);
-  text-align: center;
-}
-
-.grid_wrapper_2 > .img {
-  /*background-color: rgb(109, 109, 109);*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: pic;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.grid_wrapper_2 > .img > img {
-  width: 90%;
-  height: 90%;
-  border-radius: 10px;
-  box-shadow: rgb(0, 0, 0) 0px 0px 40px 9px;
-}
-
-.grid_wrapper_2 > .languages {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  grid-area: lan;
-  margin: 10px;
-  background-color: rgb(109, 109, 109);
-  height: 90%;
-  border-radius: 10px;
-}
-
-.grid_wrapper_2 > .frameworks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  grid-area: fam;
-  margin: 10px;
-  background-color: rgb(109, 109, 109);
-  height: 90%;
-  border-radius: 10px;
-}
-
-.grid_wrapper_2 > .text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  grid-area: txt;
-  margin: 10px;
-  background-color: rgb(109, 109, 109);
-  height: 90%;
-  border-radius: 10px;
-}
