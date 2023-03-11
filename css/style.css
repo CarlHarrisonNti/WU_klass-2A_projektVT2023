@@ -48,7 +48,7 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   grid-row: repeat(2, 500px);
   grid-gap: 40px;
-  padding: 10px;
+  padding: 10px 200px;
   grid-template-areas:
     'ma ma la pr'
     'ma ma xp pe';
@@ -371,7 +371,9 @@ body {
   background-color: rgb(97, 28, 181);
 }
 
-.react > div, .something > div, .representer > div {
+.react > div,
+.something > div,
+.representer > div {
   border-radius: 20px;
   height: 80%;
   width: 80%;
@@ -404,7 +406,7 @@ body {
   box-shadow: rgb(0, 0, 0) 0px 0px 40px 9px;
 }
 
-.grid_wrapper_2 > div{
+.grid_wrapper_2 > div {
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -434,10 +436,42 @@ body {
   margin: 0px 0px 20px 10px;
 }
 
-.languages > img
-{
+.languages > img {
   width: 100px;
   border-radius: 10px;
+}
+
+.grid_wrapper_3 {
+  padding: 10px min(300px, 10%);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px min(200px, 5%);
+  text-align: left;
+}
+
+.grid_wrapper_3 > div {
+  width: 50%;
+}
+
+.grid_wrapper_3 > div > h1 {
+  color: black;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.grid_wrapper_3 > div > h2 {
+  color: grey;
+  font-size: 1rem;
+}
+
+.grid_wrapper_3 > div > p {
+  color: black;
+  line-height: 22px;
+}
+
+.grid_wrapper_3 > div > img {
+  width: 80%;
 }
 
 @media screen and (max-width: 600px) {
@@ -500,6 +534,7 @@ body {
   .grid_wrapper {
     display: flex;
     flex-direction: column;
+    padding: 10px;
   }
   .language_list > div {
     display: flex;
@@ -529,5 +564,15 @@ body {
 
   .child {
     height: 150%;
+  }
+
+  .grid_wrapper_3 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+  }
+
+  .grid_wrapper_3 > div {
+    width: 100%;
   }
 }
