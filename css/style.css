@@ -478,6 +478,40 @@ body {
   width: 80%;
 }
 
+#project {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 50px min(200px, 10%);
+  text-align: center;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: #000 0px 0px 30px 8px;
+}
+
+#project > div {
+  width: 50%;
+}
+
+#project > div > img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+h2 > span {
+  background: linear-gradient(to right, rgb(255, 0, 200), rgb(0, 47, 255));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#project > div > h2 {
+  font-family: 'Tilt Warp', cursive;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 600px) {
   nav {
     justify-content: flex-end;
@@ -581,6 +615,14 @@ body {
   }
 
   .grid_wrapper_3 > div {
+    width: 100%;
+  }
+
+  #project {
+    flex-direction: column;
+    margin: 50px 20px;
+  }
+  #project > div {
     width: 100%;
   }
 }
