@@ -125,7 +125,8 @@ h1 {
   text-align: center;
 }
 
-h1 > span {
+h1 > em {
+  font-style: normal;
   background: linear-gradient(to right, rgb(252, 72, 72), rgb(255, 157, 0));
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -501,7 +502,8 @@ body {
   border-radius: 12px;
 }
 
-h2 > span {
+h2 > em {
+  font-style: normal;
   background: linear-gradient(to right, rgb(255, 0, 200), rgb(0, 47, 255));
   -webkit-background-clip: text;
   -moz-background-clip: text;
