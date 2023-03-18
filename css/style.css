@@ -387,7 +387,7 @@ body {
 
 .grid_wrapper_2 {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns:  minmax(200px, 1fr), minmax(200px, 1fr), minmax(300px, 1.5fr);
   grid-template-rows: 60% 40%;
   grid-template-areas:
     'pic pic lan'
@@ -405,6 +405,7 @@ body {
 
 .grid_wrapper_2 > .img > img {
   height: 90%;
+  width: 90%;
   border-radius: 10px;
   box-shadow: rgb(0, 0, 0) 0px 0px 40px 9px;
 }
