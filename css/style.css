@@ -485,7 +485,7 @@ p {
 
 .grid_wrapper_3 > div > h2 {
   color: grey;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .grid_wrapper_3 > div > p {
@@ -534,6 +534,10 @@ h2 > em {
 #project > div > h2 {
   font-family: 'Tilt Warp', cursive;
   font-weight: 500;
+}
+
+#stads_vy {
+  width: 100%;
 }
 
 @media screen and (max-width: 850px) {
