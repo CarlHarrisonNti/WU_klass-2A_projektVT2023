@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .read_more {
@@ -134,8 +139,7 @@ h1 > em {
   color: transparent;
 }
 
-.grid_wrapper,
-p {
+.grid_wrapper > div > p {
   color: gray;
   font-size: 17px;
 }
@@ -387,7 +391,8 @@ body {
 
 .grid_wrapper_2 {
   display: grid;
-  grid-template-columns:  minmax(200px, 1fr), minmax(200px, 1fr), minmax(300px, 1.5fr);
+  grid-template-columns: minmax(200px, 1fr), minmax(200px, 1fr),
+    minmax(300px, 1.5fr);
   grid-template-rows: 60% 40%;
   grid-template-areas:
     'pic pic lan'
@@ -408,6 +413,20 @@ body {
   width: 90%;
   border-radius: 10px;
   box-shadow: rgb(0, 0, 0) 0px 0px 40px 9px;
+}
+
+p {
+  color: #272727;
+  font-family: 'Open Sans', sans-serif;
+}
+.grid_wrapper_2 > div > p {
+  color: #000;
+  margin: 0px 20px;
+}
+
+.badge-section > img {
+  height: 35px;
+  border-radius: 8px;
 }
 
 .grid_wrapper_2 > div {
@@ -446,7 +465,7 @@ body {
 }
 
 .grid_wrapper_3 {
-  padding: 10px min(300px, 10%);
+  padding: 10px min(350px, 10%);
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -475,7 +494,7 @@ body {
 }
 
 .grid_wrapper_3 > div > img {
-  width: 100%;
+  width: min(100%, 400px);
 }
 
 #project {
