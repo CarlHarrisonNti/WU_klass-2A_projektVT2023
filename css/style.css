@@ -389,6 +389,15 @@ body {
   box-shadow: #131313 0px 0px 50px 15px;
 }
 
+.grid_wrapper_3 > div > ul 
+{
+  list-style: inside;
+  display: block;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 10px;
+}
+
 .grid_wrapper_2 {
   display: grid;
   grid-template-columns: minmax(200px, 1fr), minmax(200px, 1fr),
