@@ -176,7 +176,7 @@ nav {
   align-items: center;
 }
 
-ul {
+.meny {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -589,7 +589,7 @@ h2 > em {
     justify-content: flex-end;
     padding: 10px 20px;
   }
-  ul {
+  .meny {
     list-style-type: none;
     display: none;
     gap: 0px;
