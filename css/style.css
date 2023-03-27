@@ -205,7 +205,7 @@ a {
   margin: 10px min(200px, 10%);
 }
 
-#python > #external {
+#python > .external {
   background-image: linear-gradient(
     to bottom right,
     rgb(33, 142, 227),
@@ -213,12 +213,12 @@ a {
   );
 }
 
-#python > #external:hover {
+#python > .external:hover {
   background-image: none;
   background-color: rgb(33, 142, 227);
 }
 
-#ruby > #external {
+#ruby > .external {
   background-image: linear-gradient(
     to bottom right,
     rgb(239, 69, 69),
@@ -226,12 +226,12 @@ a {
   );
 }
 
-#ruby > #external:hover {
+#ruby > .external:hover {
   background-image: none;
   background-color: rgb(239, 69, 69);
 }
 
-#elixir > #external {
+#elixir > .external {
   background-image: linear-gradient(
     to bottom right,
     rgb(182, 61, 239),
@@ -239,24 +239,24 @@ a {
   );
 }
 
-#elixir > #external:hover {
+#elixir > .external:hover {
   background-image: none;
   background-color: rgb(182, 61, 239);
 }
 
-#ruby > #internal {
+#ruby > .internal {
   background-color: rgb(237, 160, 160);
 }
 
-#python > #internal {
+#python > .internal {
   background-color: lightblue;
 }
 
-#elixir > #internal {
+#elixir > .internal {
   background-color: rgb(245, 157, 245);
 }
 
-.language_list > div > #external {
+.language_list > div > .external {
   background-image: linear-gradient(
     to bottom right,
     rgb(33, 142, 227),
@@ -270,14 +270,14 @@ a {
   align-items: center;
 }
 
-.language_list > div > #external:hover {
+.language_list > div > .external:hover {
   color: white;
   background-image: none;
   background-color: rgb(33, 142, 227);
   cursor: pointer;
 }
 
-.language_list > div.open > #internal {
+.language_list > div.open > .internal {
   color: black;
   /*background-image: linear-gradient(to bottom right, rgb(33,142,227), rgb(37, 187, 213));*/
   border-radius: 10px;
@@ -287,7 +287,7 @@ a {
   height: auto;
 }
 
-.language_list > div > #internal {
+.language_list > div > .internal {
   display: none;
   height: 0;
   padding: 0px 10px;
@@ -301,7 +301,7 @@ a {
   grid-template-areas: 'text projects';
 }
 
-.language_list > div > #external > div {
+.language_list > div > .external > div {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -389,8 +389,7 @@ body {
   box-shadow: #131313 0px 0px 50px 15px;
 }
 
-.grid_wrapper_3 > div > ul 
-{
+.grid_wrapper_3 > div > ul {
   list-style: inside;
   display: block;
   font-size: 1.1rem;
@@ -547,6 +546,34 @@ h2 > em {
 
 #stads_vy {
   width: 100%;
+}
+
+.projects > div {
+  display: flex;
+  gap: 10px;
+}
+
+.projects > div > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  background-color: #f8f8f87a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.projects > div > div > h4 {
+  font-size: 1.2rem;
+}
+
+.projects > div > div > p {
+  font-size: 0.9rem;
+}
+
+.projects > div > div > img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 850px) {
