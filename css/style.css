@@ -48,7 +48,7 @@ footer {
   align-items: center;
 }
 
-.grid_wrapper {
+.grid_wrapper_index {
   margin: 10px 100px;
   display: grid;
   height: fit-content;
@@ -112,7 +112,7 @@ header > h1 {
   grid-area: pe;
 }
 
-.grid_wrapper > div > img {
+.grid_wrapper_index > div > img {
   padding: 5px;
   margin: 5px 0px;
   width: 48px;
@@ -139,7 +139,7 @@ h1 > em {
   color: transparent;
 }
 
-.grid_wrapper > div > p {
+.grid_wrapper_index > div > p {
   color: gray;
   font-size: 17px;
 }
@@ -150,14 +150,14 @@ h1 > em {
   background: linear-gradient(#062343 10%, white 70%);
 }
 
-.grid_wrapper,
+.grid_wrapper_index,
 h2 {
   color: black;
   font-size: 35px;
   margin: 10px 0px;
 }
 
-.grid_wrapper,
+.grid_wrapper_index,
 h3 {
   color: black;
   font-size: 25px;
@@ -389,7 +389,7 @@ body {
   box-shadow: #131313 0px 0px 50px 15px;
 }
 
-.grid_wrapper_3 > div > ul {
+.grid_wrapper_om_mig > div > ul {
   list-style: inside;
   display: block;
   font-size: 1.1rem;
@@ -397,7 +397,7 @@ body {
   margin: 10px;
 }
 
-.grid_wrapper_2 {
+.grid_wrapper_projekt {
   display: grid;
   grid-template-columns: minmax(200px, 1fr), minmax(200px, 1fr),
     minmax(300px, 1.5fr);
@@ -410,13 +410,13 @@ body {
   text-align: center;
 }
 
-.grid_wrapper_2 > .img {
+.grid_wrapper_projekt > .img {
   justify-content: center;
   grid-area: pic;
   margin: 10px;
 }
 
-.grid_wrapper_2 > .img > img {
+.grid_wrapper_projekt > .img > img {
   height: 90%;
   width: 90%;
   border-radius: 10px;
@@ -427,7 +427,7 @@ p {
   color: #272727;
   font-family: 'Open Sans', sans-serif;
 }
-.grid_wrapper_2 > div > p {
+.grid_wrapper_projekt > div > p {
   color: #000;
   margin: 0px 20px;
 }
@@ -437,13 +437,13 @@ p {
   border-radius: 8px;
 }
 
-.grid_wrapper_2 > div {
+.grid_wrapper_projekt > div {
   display: flex;
   align-items: center;
   border-radius: 10px;
 }
 
-.grid_wrapper_2 > .languages {
+.grid_wrapper_projekt > .languages {
   flex-direction: column;
   justify-content: space-around;
   grid-area: lan;
@@ -451,7 +451,7 @@ p {
   margin: 10px 10px 0px 0px;
 }
 
-.grid_wrapper_2 > .frameworks {
+.grid_wrapper_projekt > .frameworks {
   flex-direction: column;
   justify-content: space-around;
   grid-area: fam;
@@ -459,7 +459,7 @@ p {
   margin: 0px 10px 20px 0px;
 }
 
-.grid_wrapper_2 > .text {
+.grid_wrapper_projekt > .text {
   flex-direction: column;
   justify-content: space-around;
   grid-area: txt;
@@ -472,7 +472,7 @@ p {
   border-radius: 10px;
 }
 
-.grid_wrapper_3 {
+.grid_wrapper_om_mig {
   padding: 10px min(350px, 10%);
   display: flex;
   flex-direction: row;
@@ -481,27 +481,27 @@ p {
   text-align: left;
 }
 
-.grid_wrapper_3 > div {
+.grid_wrapper_om_mig > div {
   width: 50%;
 }
 
-.grid_wrapper_3 > div > h1 {
+.grid_wrapper_om_mig > div > h1 {
   color: black;
   font-size: 2.4rem;
   text-align: left;
 }
 
-.grid_wrapper_3 > div > h2 {
+.grid_wrapper_om_mig > div > h2 {
   color: grey;
   font-size: 1.4rem;
 }
 
-.grid_wrapper_3 > div > p {
+.grid_wrapper_om_mig > div > p {
   color: black;
   line-height: 22px;
 }
 
-.grid_wrapper_3 > div > img {
+.grid_wrapper_om_mig > div > img {
   width: min(100%, 400px);
 }
 
@@ -577,10 +577,10 @@ h2 > em {
 }
 
 @media screen and (max-width: 850px) {
-  .grid_wrapper_2 > .img > img {
+  .grid_wrapper_projekt > .img > img {
     width: 100%;
   }
-  .grid_wrapper_2 {
+  .grid_wrapper_projekt {
     display: flex;
     flex-direction: column;
     margin: 40px 0px;
@@ -591,17 +591,17 @@ h2 > em {
     height: fit-content;
   }
 
-  .grid_wrapper_2 > .languages {
+  .grid_wrapper_projekt > .languages {
     height: 100%;
     margin: 10px;
   }
 
-  .grid_wrapper_2 > .frameworks {
+  .grid_wrapper_projekt > .frameworks {
     height: 100%;
     margin: 10px;
   }
 
-  .grid_wrapper_2 > .text {
+  .grid_wrapper_projekt > .text {
     height: 100%;
     margin: 10px;
   }
@@ -668,7 +668,7 @@ h2 > em {
     display: flex;
   }
 
-  .grid_wrapper {
+  .grid_wrapper_index {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -680,13 +680,13 @@ h2 > em {
     margin: 10px min(10px, 6%);
   }
 
-  .grid_wrapper_3 {
+  .grid_wrapper_om_mig {
     display: flex;
     flex-direction: column;
     padding: 10px 0px;
   }
 
-  .grid_wrapper_3 > div {
+  .grid_wrapper_om_mig > div {
     width: 100%;
   }
 
