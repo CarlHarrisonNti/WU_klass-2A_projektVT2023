@@ -15,6 +15,11 @@ body {
   height: 100%;
 }
 
+p {
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
   text-align: center;
 }
@@ -470,7 +475,7 @@ h2 > em {
   border-radius: 20px;
   height: 80%;
   width: 80%;
-  background-color: grey;
+  background-color: rgb(141, 141, 141);
   box-shadow: #131313 0px 0px 50px 15px;
 }
 
@@ -484,7 +489,7 @@ h2 > em {
 
 .grid_wrapper_projekt {
   display: grid;
-  grid-template-columns: minmax(500px, 3fr) minmax(300px, 1.5fr);
+  grid-template-columns: minmax(500px, 3fr) minmax(300px, 1.8fr);
   grid-template-rows: 60% 40%;
   grid-template-areas:
     'pic lan'
@@ -507,12 +512,8 @@ h2 > em {
   box-shadow: rgb(0, 0, 0) 0px 0px 40px 9px;
 }
 
-p {
-  color: #272727;
-  font-family: 'Open Sans', sans-serif;
-}
 .grid_wrapper_projekt > div > p {
-  color: #000;
+  color: #000000;
   margin: 0px 20px;
 }
 
@@ -531,7 +532,7 @@ p {
   flex-direction: column;
   justify-content: space-around;
   grid-area: lan;
-  background-color: rgb(109, 109, 109);
+  background-color: rgb(120, 120, 120);
   margin: 10px 10px 0px 0px;
 }
 
@@ -539,7 +540,7 @@ p {
   flex-direction: column;
   justify-content: space-around;
   grid-area: fam;
-  background-color: rgb(109, 109, 109);
+  background-color: rgb(120, 120, 120);
   margin: 0px 10px 20px 0px;
 }
 
@@ -547,7 +548,7 @@ p {
   flex-direction: column;
   justify-content: space-around;
   grid-area: txt;
-  background-color: rgb(109, 109, 109);
+  background-color: rgb(120, 120, 120);
   margin: 0px 0px 20px 10px;
 }
 
