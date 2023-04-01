@@ -414,7 +414,7 @@ h2 > em {
   gap: 10px;
 }
 
-.projects > div > div {
+.projects > div > article {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -424,15 +424,15 @@ h2 > em {
   border-radius: 10px;
 }
 
-.projects > div > div > h4 {
+.projects > div > article > h4 {
   font-size: 1.2rem;
 }
 
-.projects > div > div > p {
+.projects > div > article > p {
   font-size: 0.9rem;
 }
 
-.projects > div > div > img {
+.projects > div > article > img {
   width: 100%;
   border-radius: 10px;
 }
