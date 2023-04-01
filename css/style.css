@@ -489,7 +489,7 @@ h2 > em {
 
 .grid_wrapper_projekt {
   display: grid;
-  grid-template-columns: minmax(500px, 3fr) minmax(300px, 1.8fr);
+  grid-template-columns: minmax(500px, 3fr) minmax(400px, 1.9fr);
   grid-template-rows: 60% 40%;
   grid-template-areas:
     'pic lan'
