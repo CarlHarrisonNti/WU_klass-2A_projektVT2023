@@ -458,15 +458,15 @@ h2 > em {
 }
 
 .react {
-  background-color: rgb(33, 142, 227);
+  background-color: #218ee3;
 }
 
 .representer {
-  background-color: rgb(211, 20, 20);
+  background-color: #d31414;
 }
 
 .something {
-  background-color: rgb(97, 28, 181);
+  background-color: #611cb5;
 }
 
 .react > div,
@@ -475,11 +475,11 @@ h2 > em {
   border-radius: 20px;
   height: 80%;
   width: 80%;
-  background-color: rgb(141, 141, 141);
+  background-color: #8d8d8d;
   box-shadow: #131313 0px 0px 50px 15px;
 }
 
-.grid_wrapper_om_mig > div > ul {
+.flexbox_om_mig > div > ul {
   list-style: inside;
   display: block;
   font-size: 1.1rem;
@@ -532,7 +532,7 @@ h2 > em {
   flex-direction: column;
   justify-content: space-around;
   grid-area: lan;
-  background-color: rgb(120, 120, 120);
+  background-color: #787878;
   margin: 10px 10px 0px 0px;
 }
 
@@ -559,7 +559,7 @@ h2 > em {
 
 /* Styling för om_mig.html: */
 
-.grid_wrapper_om_mig {
+.flexbox_om_mig {
   padding: 10px min(350px, 10%);
   display: flex;
   flex-direction: row;
@@ -568,27 +568,27 @@ h2 > em {
   text-align: left;
 }
 
-.grid_wrapper_om_mig > div {
+.flexbox_om_mig > div {
   width: 50%;
 }
 
-.grid_wrapper_om_mig > div > h1 {
+.flexbox_om_mig > div > h1 {
   color: black;
   font-size: 2.4rem;
   text-align: left;
 }
 
-.grid_wrapper_om_mig > div > h2 {
+.flexbox_om_mig > div > h2 {
   color: grey;
   font-size: 1.4rem;
 }
 
-.grid_wrapper_om_mig > div > p {
+.flexbox_om_mig > div > p {
   color: black;
   line-height: 22px;
 }
 
-.grid_wrapper_om_mig > div > img {
+.flexbox_om_mig > div > img {
   width: min(100%, 400px);
 }
 
@@ -704,13 +704,13 @@ h2 > em {
     margin: 10px min(10px, 6%);
   }
 
-  .grid_wrapper_om_mig {
+  .flexbox_om_mig {
     display: flex;
     flex-direction: column;
     padding: 10px 0px;
   }
 
-  .grid_wrapper_om_mig > div {
+  .flexbox_om_mig > div {
     width: 100%;
   }
 
@@ -719,6 +719,13 @@ h2 > em {
     margin: 50px 20px;
   }
   #project > div {
+    width: 100%;
+  }
+
+  .projects > div {
+    flex-direction: column;
+  }
+  .projects > div > div {
     width: 100%;
   }
 }
