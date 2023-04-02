@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
-/* Generel sytling: */
+/* Generel styling: */
 * {
   margin: 0px;
   padding: 0px;
@@ -153,7 +153,7 @@ nav {
   grid-area: la;
 }
 
-#projects {
+#projects_summery {
   grid-area: pr;
 }
 
@@ -165,7 +165,7 @@ nav {
   grid-area: pe;
 }
 
-.grid_wrapper_index > div > img {
+.grid_wrapper_index > section > img {
   padding: 5px;
   margin: 5px 0px;
   width: 48px;
@@ -191,7 +191,7 @@ h1 > em {
   color: transparent;
 }
 
-.grid_wrapper_index > div > p {
+.grid_wrapper_index > section > p {
   color: rgb(88, 88, 88);
   font-size: 17px;
 }
@@ -216,7 +216,7 @@ h3 {
   margin: 5px 0px;
 }
 
-#project {
+#project_index {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -228,7 +228,8 @@ h3 {
   box-shadow: #000 0px 0px 30px 8px;
 }
 
-#project > div {
+#project_index > article,
+#project_index > div {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -236,7 +237,7 @@ h3 {
   align-items: center;
 }
 
-#project > div > img {
+#project_index > div > img {
   width: 100%;
   border-radius: 12px;
 }
@@ -250,7 +251,7 @@ h2 > em {
   color: transparent;
 }
 
-#project > div > h2 {
+#project_index > article > h2 {
   font-family: 'Tilt Warp', cursive;
   font-weight: 500;
 }
@@ -264,7 +265,7 @@ h2 > em {
   margin: 10px 0px;
 }
 
-.language_list > div {
+.language_list > section {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -322,7 +323,7 @@ h2 > em {
   background-color: rgb(245, 157, 245);
 }
 
-.language_list > div > .external {
+.language_list > section > .external {
   background-image: linear-gradient(
     to bottom right,
     rgb(33, 142, 227),
@@ -336,14 +337,14 @@ h2 > em {
   align-items: center;
 }
 
-.language_list > div > .external:hover {
+.language_list > section > .external:hover {
   color: white;
   background-image: none;
   background-color: rgb(33, 142, 227);
   cursor: pointer;
 }
 
-.language_list > div.open > .internal {
+.language_list > section.open > .internal {
   color: black;
   border-radius: 10px;
   width: 100%;
@@ -352,7 +353,7 @@ h2 > em {
   height: auto;
 }
 
-.language_list > div > .internal {
+.language_list > section > .internal {
   display: none;
   height: 0;
   padding: 0px 10px;
@@ -364,7 +365,7 @@ h2 > em {
   grid-template-areas: 'txt prj';
 }
 
-.language_list > div > .external > div {
+.language_list > section > .external > div {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -374,7 +375,7 @@ h2 > em {
   width: 190px;
 }
 
-.language_list > div > div > img {
+.external > img {
   transform: rotate(90deg);
   margin: 0px 10px;
   transition: 0.15s;
@@ -386,11 +387,6 @@ h2 > em {
   transform: rotate(0deg);
 }
 
-.language_list > div > div > .language {
-  width: 50px;
-  height: 50px;
-}
-
 .about {
   display: flex;
   flex-direction: column;
@@ -400,7 +396,7 @@ h2 > em {
   grid-area: txt;
 }
 
-.projects {
+.sprak_projects {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -409,12 +405,12 @@ h2 > em {
   grid-area: prj;
 }
 
-.projects > div {
+.sprak_projects > div {
   display: flex;
   gap: 10px;
 }
 
-.projects > div > article {
+.sprak_projects > div > article {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -424,15 +420,15 @@ h2 > em {
   border-radius: 10px;
 }
 
-.projects > div > article > h4 {
+.sprak_projects > div > article > h4 {
   font-size: 1.2rem;
 }
 
-.projects > div > article > p {
+.sprak_projects > div > article > p {
   font-size: 0.9rem;
 }
 
-.projects > div > article > img {
+.sprak_projects > div > article > img {
   width: 100%;
   border-radius: 10px;
 }
@@ -479,14 +475,6 @@ h2 > em {
   box-shadow: #131313 0px 0px 50px 15px;
 }
 
-.flexbox_om_mig > div > ul {
-  list-style: inside;
-  display: block;
-  font-size: 1.1rem;
-  padding: 10px;
-  margin: 10px;
-}
-
 .grid_wrapper_projekt {
   display: grid;
   grid-template-columns: minmax(500px, 3fr) minmax(400px, 1.9fr);
@@ -499,19 +487,23 @@ h2 > em {
   text-align: center;
 }
 
-.grid_wrapper_projekt > .img {
+.grid_wrapper_projekt > .image_box {
+  display: flex;
+  align-items: center;
   justify-content: center;
   grid-area: pic;
   margin: 10px;
 }
 
-.grid_wrapper_projekt > .img > img {
-  height: 90%;
+.grid_wrapper_projekt > .image_box > img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: scale-down;
   border-radius: 10px;
   box-shadow: rgb(0, 0, 0) 0px 0px 40px 9px;
 }
 
-.grid_wrapper_projekt > div > p {
+.grid_wrapper_projekt > section > p {
   color: #000000;
   margin: 0px 20px;
 }
@@ -521,7 +513,7 @@ h2 > em {
   border-radius: 8px;
 }
 
-.grid_wrapper_projekt > div {
+.grid_wrapper_projekt > section {
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -567,36 +559,45 @@ h2 > em {
   text-align: left;
 }
 
-.flexbox_om_mig > div {
+.flexbox_om_mig > section > ul {
+  list-style: inside;
+  display: block;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 10px;
+}
+
+.flexbox_om_mig > section,
+.flexbox_om_mig > article {
   width: 50%;
 }
 
-.flexbox_om_mig > div > h1 {
+.flexbox_om_mig > article > h1 {
   color: black;
   font-size: 2.4rem;
   text-align: left;
 }
 
-.flexbox_om_mig > div > h2 {
+.flexbox_om_mig > article > h2 {
   color: grey;
   font-size: 1.4rem;
 }
 
-.flexbox_om_mig > div > p {
+.flexbox_om_mig > section > p {
   color: black;
   line-height: 22px;
 }
 
-.flexbox_om_mig > div > img {
+.flexbox_om_mig > section > img {
   width: min(100%, 400px);
 }
 
 #stads_vy {
-  width: 100%;
+  width: 90%;
 }
 
-@media screen and (max-width: 850px) {
-  .grid_wrapper_projekt > .img > img {
+@media screen and (max-width: 900px) {
+  .grid_wrapper_projekt > .image_box > img {
     width: 100%;
   }
   .grid_wrapper_projekt {
@@ -631,7 +632,7 @@ h2 > em {
 }
 
 @media screen and (max-width: 600px) {
-  .language_list > div.open > .internal {
+  .language_list > section.open > .internal {
     display: flex;
     flex-direction: column;
   }
@@ -696,7 +697,7 @@ h2 > em {
     flex-direction: column;
     padding: 10px;
   }
-  .language_list > div {
+  .language_list > section {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -709,22 +710,23 @@ h2 > em {
     padding: 10px 0px;
   }
 
-  .flexbox_om_mig > div {
+  .flexbox_om_mig > section,
+  .flexbox_om_mig > article {
     width: 100%;
   }
 
-  #project {
+  #project_index {
     flex-direction: column;
     margin: 50px 20px;
   }
-  #project > div {
+  #project_index > div {
     width: 100%;
   }
 
-  .projects > div {
+  .sprak_projects > div {
     flex-direction: column;
   }
-  .projects > div > div {
+  .sprak_projects > div > article {
     width: 100%;
   }
 }
