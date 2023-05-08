@@ -265,7 +265,22 @@ h2 > em {
   margin: 10px 0px;
 }
 
-.language_list > section {
+.center-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cons-pro {
+  text-align: left;
+}
+
+
+.notes{
+  font-size: 1.2rem;
+}
+
+.language_list > section  {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -408,13 +423,14 @@ h2 > em {
 .sprak_projects > div {
   display: flex;
   gap: 10px;
+  flex-direction: column;
 }
 
 .sprak_projects > div > article {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   background-color: #f8f8f87a;
   padding: 10px;
   border-radius: 10px;
@@ -684,12 +700,10 @@ h2 > em {
   .hamburger.open span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
   }
-  .menu.open {
-    left: 0;
-  }
 
   .meny.open {
     display: flex;
+    left: 0;
   }
 
   .grid_wrapper_index {
