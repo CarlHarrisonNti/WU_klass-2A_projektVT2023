@@ -178,9 +178,6 @@ nav {
   border-radius: 10px;
   color: white;
 }
-h1 {
-  text-align: center;
-}
 
 h1 > em {
   font-style: normal;
@@ -221,7 +218,7 @@ h3 {
   flex-direction: row;
   gap: 10px;
   margin: 50px min(150px, 6%);
-  text-align: center;
+  text-align: left;
   background-color: rgb(228, 228, 228);
   border-radius: 10px;
   padding: 10px;
@@ -269,6 +266,11 @@ h2 > em {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.con-pro {
+  position: relative;
+  left: 15px;
 }
 
 .cons-pro {
@@ -407,8 +409,12 @@ h2 > em {
   flex-direction: column;
   gap: 10px;
   margin: 10px min(200px, 10%);
-  text-align: center;
+  text-align: left;
   grid-area: txt;
+}
+
+.about > h3 {
+  text-align: center;
 }
 
 .sprak_projects {
@@ -416,8 +422,12 @@ h2 > em {
   flex-direction: column;
   gap: 10px;
   margin: 10px min(200px, 10%);
-  text-align: center;
+  text-align: left;
   grid-area: prj;
+}
+
+.sprak_projects > h3 {
+  text-align: center;
 }
 
 .sprak_projects > div {
@@ -500,7 +510,7 @@ h2 > em {
     'txt fam';
   gap: 10px;
   margin: 10px min(200px, 5%);
-  text-align: center;
+  text-align: left;
 }
 
 .grid_wrapper_projekt > .image_box {
@@ -524,6 +534,15 @@ h2 > em {
   margin: 0px 20px;
 }
 
+.badge-section{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .badge-section > img {
   height: 35px;
   border-radius: 8px;
@@ -538,17 +557,17 @@ h2 > em {
 .grid_wrapper_projekt > .languages {
   flex-direction: column;
   justify-content: space-around;
-  grid-area: lan;
+  grid-area: fam;
   background-color: #787878;
-  margin: 10px 10px 0px 0px;
+  margin: 0px 10px 20px 0px;
 }
 
 .grid_wrapper_projekt > .frameworks {
   flex-direction: column;
   justify-content: space-around;
-  grid-area: fam;
+  grid-area: lan;
   background-color: rgb(120, 120, 120);
-  margin: 0px 10px 20px 0px;
+  margin: 10px 10px 0px 0px;
 }
 
 .grid_wrapper_projekt > .text {
@@ -665,7 +684,7 @@ h2 > em {
     align-content: space-around;
     justify-content: space-around;
     right: 0px;
-    text-align: center;
+    text-align: left;
     top: 60px;
     height: 80vh;
     background-color: rgb(33, 142, 227);
