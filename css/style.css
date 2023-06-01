@@ -50,6 +50,11 @@ a {
   font-weight: 600;
 }
 
+#main-text > h3{
+  font-size: 1.5rem;
+  padding: 8px 0px;
+}
+
 footer {
   background-image: linear-gradient(
     to bottom right,
@@ -446,8 +451,14 @@ h2 > em {
   border-radius: 10px;
 }
 
+.sprak_projects > div > article > p {
+  padding: 0px 10px;
+}
+
 .sprak_projects > div > article > h4 {
   font-size: 1.2rem;
+  padding-top: 1px;
+  padding-bottom: 5px;
 }
 
 .sprak_projects > div > article > p {
@@ -534,6 +545,16 @@ h2 > em {
   margin: 0px 20px;
 }
 
+article > h3 {
+  font-size: 1.2rem;
+  color: #353535;
+  padding: 5px 0px;
+}
+
+.text > h4 {
+  padding: 0px 0px 5px 0px;
+}
+
 .badge-section{
   display: flex;
   flex-direction: row;
@@ -576,6 +597,14 @@ h2 > em {
   grid-area: txt;
   background-color: rgb(120, 120, 120);
   margin: 0px 0px 20px 10px;
+}
+
+article.text > p {
+  padding: 0px 15px;
+}
+
+article.text > h2 {
+  padding: 0px 10px;
 }
 
 .languages > img {
